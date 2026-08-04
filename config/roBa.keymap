@@ -76,14 +76,6 @@
     
             tap-ms = <20>;
         };
-
-        inc_dec_kp_3: inc_dec_kp_3 {
-            compatible = "zmk,behavior-input-two-axis";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            steps = <2>;
-            trigger-period-ms = <12>;
-        };
     };
 
     keymap {
@@ -126,7 +118,7 @@
 &trans          &trans          &trans          &trans           &trans         &trans      &kp DEL  &trans                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp_3 LC(TAB) LS(LC(TAB))>;
+            sensor-bindings = <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
         };
 
         MOUSE {
