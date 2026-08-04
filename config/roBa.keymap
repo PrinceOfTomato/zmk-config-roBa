@@ -76,6 +76,15 @@
     
             tap-ms = <20>;
         };
+
+        encoder_msc_left_right: encoder_msc_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_LEFT_RIGHT";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHTj>;
+    
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -118,7 +127,7 @@
 &trans          &trans          &trans          &trans           &trans         &trans      &kp DEL  &trans                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
+             sensor-bindings = <&encoder_msc_left_right>;
         };
 
         MOUSE {
