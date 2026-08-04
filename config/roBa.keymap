@@ -73,16 +73,16 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
+    
             tap-ms = <20>;
         };
 
         inc_dec_kp_3: inc_dec_kp_3 {
-            compatible = "zmk,behavior-sensor-rotate-var";
+            compatible = "zmk,behavior-input-two-axis";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-
-            tap-ms = <150>;
+            steps = <2>;
+            trigger-period-ms = <12>;
         };
     };
 
