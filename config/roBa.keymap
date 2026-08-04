@@ -87,6 +87,7 @@
 
         encoder_rotate_tab: encoder_rotate_tab {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_ROTATE_TAB";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             
@@ -135,7 +136,7 @@
 &trans          &trans          &trans          &trans           &trans         &trans      &kp DEL  &trans                                      &trans
             >;
 
-            sensor-bindings = <&encoder_rotate_tab LC(TAB) LC(RS(TAB))>;
+            sensor-bindings = <&encoder_rotate_tab LC(TAB) LS(LC(TAB))>;
         };
 
         MOUSE {
