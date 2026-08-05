@@ -97,6 +97,13 @@
 
             tap-ms = <20>;
         };
+
+        convert_cycle: convert_cycle {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F10>, <&kp F7>, <&kp F6>;
+        };
     };
 
     keymap {
