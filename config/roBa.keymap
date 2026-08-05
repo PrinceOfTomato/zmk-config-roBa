@@ -104,6 +104,15 @@
             tapping-term-ms = <200>;
             bindings = <&kp F10>, <&kp F7>, <&kp F6>;
         };
+
+        lt_convert: lt_convert {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&convert_dance>;
+        };
     };
 
     keymap {
