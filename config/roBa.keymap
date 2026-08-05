@@ -98,20 +98,20 @@
             tap-ms = <20>;
         };
 
-        convert_dance: convert_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp F10>, <&kp F7>, <&kp F6>;
-        };
-
-        lt_convert: lt_convert {
+        lt_f10: lt_f10 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            bindings = <&mo>, <&convert_dance>;
+            bindings = <&mo>, <&kp>;
+        };
+
+        convert_dance: convert_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt_f10 1 F10>, <&kp F7>, <&kp F6>;
         };
     };
 
