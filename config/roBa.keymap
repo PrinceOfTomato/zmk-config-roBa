@@ -28,6 +28,15 @@
     };
 };
 
+&trackball_listener {
+    input-processors = <&zip_xy_scaler 1 1>;
+
+    drag_precision {
+        layers = <7>;
+        input-processors = <&zip_xy_scaler 1 2>;
+    };
+};
+
 / {
     combos {
         compatible = "zmk,combos";
