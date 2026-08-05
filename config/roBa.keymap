@@ -56,7 +56,7 @@
 
         mouse_next {
             bindings = <&mkp MB5>;
-            key-positions = <6 7>;
+            key-positions = <19 20>;
             layers = <4>;
         };
     };
