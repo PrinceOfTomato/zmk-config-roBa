@@ -187,10 +187,10 @@
 
         MOUSE_DRAG {
             bindings = <
-&trans  &trans    &kp UP    &trans     &trans                        &trans  &trans    &trans    &trans    &trans
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans        &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans    &trans    &trans     &trans  &mkp MB1      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans     &trans  &trans        &trans  &trans                                &trans
+&kp PAGE_UP  &trans    &kp UP    &trans     &kp PAGE_DOWN                            &trans  &trans    &trans    &trans    &trans
+&kp HOME     &kp LEFT  &kp DOWN  &kp RIGHT  &kp END        &trans        &trans      &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
+&trans       &trans    &trans    &trans     &trans         &mkp MB1      &trans      &trans  &trans    &trans    &trans    &trans
+&trans       &trans    &trans    &trans     &trans         &trans        &kp DELETE  &trans                                &trans
             >;
         };
     };
