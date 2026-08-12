@@ -50,13 +50,13 @@
 
         mouse_prev {
             bindings = <&mkp MB4>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
             layers = <4>;
         };
 
         mouse_next {
             bindings = <&mkp MB5>;
-            key-positions = <19 20>;
+            key-positions = <21 20>;
             layers = <4>;
         };
     };
@@ -160,10 +160,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &mo 7       &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &mo 7       &trans  &trans                              &trans
             >;
         };
 
@@ -187,10 +187,10 @@
 
         MOUSE_DRAG {
             bindings = <
-&kp PAGE_UP  &trans    &kp UP    &trans     &kp PAGE_DOWN                            &trans  &trans    &trans    &trans    &trans
-&kp HOME     &kp LEFT  &kp DOWN  &kp RIGHT  &kp END        &trans        &trans      &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans       &trans    &trans    &trans     &trans         &mkp MB1      &trans      &trans  &trans    &trans    &trans    &trans
-&trans       &trans    &trans    &trans     &trans         &trans        &kp DELETE  &trans                                &trans
+&kp PAGE_UP  &trans    &kp UP    &trans     &kp PAGE_DOWN                            &trans  &trans  &trans    &trans    &trans
+&kp HOME     &kp LEFT  &kp DOWN  &kp RIGHT  &kp END        &trans        &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans
+&trans       &trans    &trans    &trans     &trans         &mkp MB1      &trans      &trans  &trans  &trans    &trans    &trans
+&trans       &trans    &trans    &trans     &trans         &trans        &kp DELETE  &trans                              &trans
             >;
         };
     };
