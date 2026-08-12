@@ -50,13 +50,13 @@
 
         mouse_prev {
             bindings = <&mkp MB4>;
-            key-positions = <19 20>;
+            key-positions = <19 8>;
             layers = <4>;
         };
 
         mouse_next {
             bindings = <&mkp MB5>;
-            key-positions = <21 20>;
+            key-positions = <8 9>;
             layers = <4>;
         };
     };
