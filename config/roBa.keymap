@@ -45,13 +45,13 @@
 
         mouse_prev {
             bindings = <&mkp MB4>;
-            key-positions = <18 7>;
+            key-positions = <19 8>;
             layers = <4>;
         };
 
         mouse_next {
             bindings = <&mkp MB5>;
-            key-positions = <8 7>;
+            key-positions = <8 9>;
             layers = <4>;
         };
     };
@@ -183,7 +183,7 @@
         MOUSE_DRAG {
             bindings = <
 &trans  &trans  &trans  &trans  &mkp MB1                          &trans  &trans  &trans    &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &trans      &trans  &trans  &mkp MB1  &trans    &trans
+&trans  &trans  &trans  &trans  &mkp MB1  &trans      &trans      &trans  &trans  &mkp MB1  &trans    &trans
 &trans  &trans  &trans  &trans  &trans    &trans      &trans      &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans    &trans      &kp DELETE  &trans                              &trans
             >;
