@@ -31,10 +31,10 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 3 2>;
+    input-processors = <&zip_xy_scaler 7 4>;
 
     drag_precision {
-        layers = <7>;
+        layers = <3>;
         input-processors = <&zip_xy_scaler 1 3>;
     };
 };
