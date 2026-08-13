@@ -93,20 +93,12 @@
             tap-ms = <20>;
         };
 
-        lt_f10: lt_f10 {
+        mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            bindings = <&mo>, <&kp>;
-        };
-
-        convert_dance: convert_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt_f10 6 F10>, <&kp F7>, <&kp F6>;
+            bindings = <&mo>, <&tog>;
         };
     };
 
