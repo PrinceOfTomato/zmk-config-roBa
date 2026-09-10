@@ -161,6 +161,15 @@
             flavor = "balanced";
             quick-tap-ms = <200>;
         };
+
+        encoder_zoom_out_in: encoder_zoom_out_in {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_ZOOM_OUT_IN";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(MINUS)>, <&kp LC(PLUS)>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -185,7 +194,7 @@
 &trans     &trans           &trans        &trans        &kp F16        &kp F14      &trans  &trans                                                                         &trans
             >;
 
-            sensor-bindings = <&encoder_msc_ctrl_down_up>;
+            sensor-bindings = <&encoder_zoom_out_in>;
         };
 
         LAYER2 {
