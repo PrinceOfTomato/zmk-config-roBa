@@ -194,7 +194,7 @@
 &trans     &trans           &trans        &trans        &kp F16        &kp F14      &trans  &trans                                                                         &trans
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_ctrl_down_up>;
         };
 
         LAYER2 {
