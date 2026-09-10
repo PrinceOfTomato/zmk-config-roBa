@@ -127,6 +127,15 @@
             tap-ms = <20>;
         };
 
+        encoder_msc_down_up: encoder_msc_ctrl_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_CTRL_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc_ctrl SCRL_DOWN>, <&msc_ctrl SCRL_UP>;
+
+            tap-ms = <20>;
+        };
+
         encoder_msc_left_right: encoder_msc_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_LEFT_RIGHT";
@@ -185,7 +194,7 @@
 &trans     &trans           &trans        &trans        &kp F16        &kp F14      &trans  &trans                                                                         &trans
             >;
 
-            sensor-bindings = <&encoder_msc_left_right>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         LAYER2 {
