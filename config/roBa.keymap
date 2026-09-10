@@ -131,7 +131,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_CTRL_DOWN_UP";
             #sensor-binding-cells = <0>;
-            bindings = <&msc LCTRL(SCRL_DOWN)>, <&msc LCTRL(SCRL_UP)>;
+            bindings = <&kp LC(MOVE_WH_DN)>, <&kp LC(MOVE_WH_UP)>;
 
             tap-ms = <20>;
         };
