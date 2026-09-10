@@ -71,7 +71,7 @@
         };
 
         equal {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp TAB>;
             key-positions = <13 12>;
         };
 
