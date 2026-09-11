@@ -69,16 +69,6 @@
             key-positions = <20 19>;
             layers = <4>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
     };
 
     macros {
