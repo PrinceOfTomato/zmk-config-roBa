@@ -126,19 +126,13 @@
             tap-ms = <20>;
         };
 
-        mo_to: behavior_mo_to {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&to>;
-        };
+        encoder_zoom_out_in: encoder_zoom_out_in {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_ZOOM_OUT_IN";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(MINUS)>, <&kp LC(PLUS)>;
 
-        tog_off: toggle_layer_off {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
+            tap-ms = <20>;
         };
 
         mt_exit_AML_on_tap: mt_exit_AML_on_tap {
@@ -152,13 +146,18 @@
             quick-tap-ms = <200>;
         };
 
-        encoder_zoom_out_in: encoder_zoom_out_in {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENCODER_ZOOM_OUT_IN";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LC(MINUS)>, <&kp LC(PLUS)>;
+        tog_on: toggle_layer_on_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer On";
+            toggle-mode = "on";
+        };
 
-            tap-ms = <20>;
+        tog_off: toggle_layer_off_only {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
         };
     };
 
