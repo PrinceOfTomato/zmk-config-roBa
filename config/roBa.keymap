@@ -165,7 +165,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        win_default_layer {
             bindings = <
 &lt 3 Q           &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &lt 5 P
 &kp A             &kp S           &kp D         &kp F      &kp G        &kp LS(LG(S))      &kp F7         &kp H        &kp J  &kp K      &kp L    &kp MINUS
@@ -241,6 +241,26 @@
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
+        };
+
+        mac_default_layer {
+            bindings = <
+&lt 3 Q       &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &lt 5 P
+&kp A         &kp S           &kp D         &kp F      &kp G        &kp LS(LG(S))      &kp F7         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z         &kp X           &kp C         &kp V      &kp B        &kp TAB            &lt 3 F10      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt 6 F14  &lt 2 SPACE  &lt 7 F15          &kp BACKSPACE  &lt 1 ENTER                             &kp LEFT_CONTROL
+            >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
+        };
+
+        cmd_layer {
+            bindings = <
+&kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)                            &kp LG(Y)  &kp LG(U)  &kp LG(I)  &kp LG(O)  &kp LG(P)
+&kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &trans      &bt BT_SEL 0  &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans      &bt BT_SEL 1  &kp LG(N)  &kp LG(M)  &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans      &trans        &trans                                      &trans
+            >;
         };
     };
 };
