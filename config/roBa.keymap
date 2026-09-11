@@ -61,13 +61,13 @@
         mouse_prev {
             bindings = <&mkp MB4>;
             key-positions = <18 19>;
-            layers = <4>;
+            layers = <5>;
         };
 
         mouse_next {
             bindings = <&mkp MB5>;
             key-positions = <20 19>;
-            layers = <4>;
+            layers = <5>;
         };
     };
 
@@ -84,7 +84,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off 4>;
+            bindings = <&tog_off 5>;
             label = "exit_AML";
         };
 
@@ -166,10 +166,21 @@
 
         win_default_layer {
             bindings = <
-&lt 3 Q           &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &lt 5 P
+&lt 4 Q           &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &lt 6 P
 &kp A             &kp S           &kp D         &kp F      &kp G        &kp LS(LG(S))      &kp F7         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z             &kp X           &kp C         &kp V      &kp B        &kp TAB            &lt 3 F10      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt 6 F14  &lt 2 SPACE  &lt 7 F15          &kp BACKSPACE  &lt 1 ENTER                             &kp LEFT_WIN
+&kp Z             &kp X           &kp C         &kp V      &kp B        &kp TAB            &lt 4 F10      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt 7 F14  &lt 3 SPACE  &lt 8 F15          &kp BACKSPACE  &lt 2 ENTER                             &kp LEFT_WIN
+            >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
+        };
+
+        mac_default_layer {
+            bindings = <
+&lt 4 Q       &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &lt 6 P
+&kp A         &kp S           &kp D         &kp F      &kp G        &kp LS(LG(S))      &kp F7         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z         &kp X           &kp C         &kp V      &kp B        &kp TAB            &lt 4 F10      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt 9 F14  &lt 3 SPACE  &lt 8 F15          &kp BACKSPACE  &lt 2 ENTER                             &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -240,17 +251,6 @@
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
-        };
-
-        mac_default_layer {
-            bindings = <
-&lt 3 Q       &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &lt 5 P
-&kp A         &kp S           &kp D         &kp F      &kp G        &kp LS(LG(S))      &kp F7         &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z         &kp X           &kp C         &kp V      &kp B        &kp TAB            &lt 3 F10      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_ALT  &lt 9 F14  &lt 2 SPACE  &lt 7 F15          &kp BACKSPACE  &lt 1 ENTER                             &kp LEFT_CONTROL
-            >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         cmd_layer {
