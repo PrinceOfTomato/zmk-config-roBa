@@ -15,7 +15,6 @@
 &zip_temp_layer {
     excluded-positions = <
         18 // J
-        19 // K
         34 // Ctrl
         35 // Shift
         36 // Alt
@@ -58,6 +57,11 @@
     combos {
         compatible = "zmk,combos";
 
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <18 19>;
+        };
+
         mouse_prev {
             bindings = <&mkp MB4>;
             key-positions = <19 20>;
@@ -66,11 +70,6 @@
         mouse_next {
             bindings = <&mkp MB5>;
             key-positions = <20 21>;
-        };
-
-        right_click {
-            bindings = <&mkp MB2>;
-            key-positions = <18 19>;
         };
     };
 
