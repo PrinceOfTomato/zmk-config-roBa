@@ -60,12 +60,17 @@
 
         mouse_prev {
             bindings = <&mkp MB4>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
         };
 
         mouse_next {
             bindings = <&mkp MB5>;
-            key-positions = <20 19>;
+            key-positions = <20 21>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <18 19>;
         };
     };
 
@@ -206,19 +211,19 @@
 
         function_drag_layer {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F12                      &bt BT_SEL 0  &bt BT_SEL 1  &tog 1    &trans  &trans
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &trans        &mkp MB1      &mkp MB2  &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &trans        &trans        &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans                                        &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F12                      &bt BT_SEL 0  &bt BT_SEL 1  &tog 1  &trans  &trans
+&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &trans        &mkp MB1      &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans  &trans        &trans        &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans                                      &trans
             >;
         };
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
         };
 
